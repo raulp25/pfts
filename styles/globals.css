@@ -1,0 +1,382 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hero-button {
+    @apply px-6 py-2 md:border  md:border-[#72FFFF] rounded-full uppercase text-xs tracking-widest text-gray-300 transition-all hover:border-[#ff5fc2] hover:text-white;
+  }
+  .contact-input {
+    @apply outline-none bg-[#0b0d17] rounded-sm border-b px-1 py-1 lg:px-5 lg:py-3 2xl:px-6 2xl:py-4  border-[#ffce72] text-white placeholder-slate-200/40 transition-all focus:border-[#F7AB0A] focus:text-[#F7AB0A] hover:border-[#F7AB0A];
+  }
+}
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button.button {
+  border-radius: 5px;
+  font-size: 1rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 16px;
+  border: solid 2px transparent;
+  background-image: linear-gradient(rgb(133, 255, 222), #7fffff), linear-gradient(101deg, #83ff78, #ffb948);  
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #0f1018 inset;
+  background-color: transparent;
+  height: 40px;
+}
+
+button.button:hover {
+  background-image: unset;
+  border: 2px solid #72FFFF; 
+  color: white;
+}
+.main-about{
+  
+}
+
+.mobile-width{
+  width: 90.2%;
+}
+
+.overlay {
+  position: fixed; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0; 
+  height: 100vh;
+   background: rgba(0, 0, 0, 0.01);
+  z-index: 25;
+}
+
+.rr{
+    justify-self: flex-end !important;
+    align-items: flex-center !important;
+}
+
+.menu-border{
+  
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.triangle {
+  width: 150px;
+  height: 150px;
+  border-left: 1px solid #ffffff;
+  position: relative;
+  margin: 0px;
+}
+
+.triangle::after,
+.triangle::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #ffffff;
+  transform-origin: 0 0;
+}
+.triangle::before {
+  top: 0;
+  left: 0;
+  right: 0px;
+  transform: rotate(30deg);
+}
+
+
+.triangle::after {
+  bottom: 0;
+  right: 0px;
+  left: 0px;
+  transform: rotate(-30deg);
+}
+
+
+.triangle2 {
+  width: 75px;
+  height: 75px;
+  border-left: 1px solid #ffc079;
+  position: relative;
+  margin: 0px;
+  margin-left: 37.5px;
+}
+
+.triangle2::after,
+.triangle2::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #ffc079;
+  transform-origin: 0 0;
+}
+.triangle2::before {
+  top: 0;
+  left: 0;
+  right: 0px;
+  transform: rotate(30deg);
+}
+
+
+.triangle2::after {
+  bottom: 0;
+  right: 0px;
+  left: 0px;
+  transform: rotate(-30deg);
+}
+
+.triangle3 {
+ 
+  border-left: 2px solid white;
+  position: relative;
+  margin: 0px;
+  /* border:2px solid blue */
+}
+
+.triangle3::after,
+.triangle3::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: white;
+  transform-origin: 0 0;
+}
+.triangle3::before {
+  top: 0;
+  left: 0;
+  right: 0px;
+  transform: rotate(30deg);
+}
+
+
+
+.triangle3::after {
+  bottom: 0;
+  right: 0px;
+  left: 0px;
+  transform: rotate(-30deg);
+}
+
+
+.triangle4 {
+  
+  border-left: 2px solid #ff78b9;
+  position: relative;
+  margin: 0px;
+  /* margin-left: 36.5px; */
+  /* border:2px solid blue */
+}
+
+.triangle4::after,
+.triangle4::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: #ff78b9;
+  transform-origin: 0 0;
+}
+.triangle4::before {
+  top: 0;
+  left: 0;
+  right: 0px;
+  transform: rotate(30deg);
+}
+
+
+.triangle4::after {
+  bottom: 0;
+  right: 0px;
+  left: 0px;
+  transform: rotate(-30deg);
+}
+
+
+.triangle5 {
+  width: 75px;
+  height: 75px;
+  border-left: 1px solid #ffffff;
+  position: relative;
+  margin: 0px;
+}
+
+.triangle5::after,
+.triangle5::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #ffffff;
+  transform-origin: 0 0;
+}
+.triangle5::before {
+  top: 0;
+  left: 0;
+  right: 0px;
+  transform: rotate(30deg);
+}
+
+
+.triangle5::after {
+  bottom: 0;
+  right: 0px;
+  left: 0px;
+  transform: rotate(-30deg);
+}
+
+
+.triangle6 {
+  width: 37.5px;
+  height: 37.5px;
+  border-left: 1px solid #ffc079;
+  position: relative;
+  margin: 0px;
+  margin-left: 18.5px;
+}
+
+@media ( min-width: 1000px ){
+  .triangle6 {
+    width: 37.5px;
+    height: 37.5px;
+    border-left: 1px solid #ffc079;
+    position: relative;
+    margin: 0px;
+    margin-left: 19.5px;
+
+  }
+  
+}
+
+.triangle6::after,
+.triangle6::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #ffc079;
+  transform-origin: 0 0;
+}
+.triangle6::before {
+  top: 0;
+  left: 0;
+  right: 0px;
+  transform: rotate(30deg);
+}
+
+
+.triangle6::after {
+  bottom: 0;
+  right: 0px;
+  left: 0px;
+  transform: rotate(-30deg);
+}
+
+
+.atom {
+	position: relative;
+	display: flex;
+	width: 90px;
+	height: 90px;
+	align-items: center;
+	justify-content: center;
+}
+.atom:before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: transparent;
+	box-shadow: inset 0 0 10px #fff;
+	border-radius: 50%;
+}
+.line {
+  position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+}
+
+@keyframes animate1 {
+	0% {
+		transform: rotateY(70deg) rotateZ(0deg);
+	}
+	100% {
+		transform: rotateY(70deg) rotateZ(360deg);
+	}
+}
+
+.line2 {
+  --color: #e63946;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border-right: 10px solid var(--color);
+	border-left: 10px solid var(--color);
+	animation: animate2 3s linear infinite;
+  filter:drop-shadow( 0 0 10px var(--color));
+}
+@keyframes animate2 {
+	0% {
+		transform: rotateX(80deg) rotateY(25deg) rotateZ(0deg);
+	}
+	100% {
+		transform: rotateX(80deg) rotateY(25deg) rotateZ(360deg);
+	}
+}
+
+.line3 {
+  --color: #fca311;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border-right: 10px solid var(--color);
+	border-left: 10px solid var(--color);
+	animation: animate3 3s linear infinite;
+  filter:drop-shadow( 0 0 10px var(--color));
+}
+
+@keyframes animate3 {
+	0% {
+		transform: rotateX(-80deg) rotateY(25deg) rotateZ(0deg);
+	}
+	100% {
+		transform: rotateX(-80deg) rotateY(25deg) rotateZ(360deg);
+	}
+}
+
+
+.image-container {
+  width: 260px;
+  height: 178px;
+}
+
+@media ( min-width: 350px ){
+  .image-container {
+    width: 331px;
+    height: 178px;
+  }
+}
+
+@media ( min-width: 640px ){
+  .image-container {
+    width: 570px;
+    height: 220px;
+  }
+}
+
+@media ( min-width: 1024px ){
+  .image-container {
+    width: 250px;
+    height: 150px;
+  }
+}
+.image-container .image {
+  width: 100%;
+  height: 100%;
+  position: relative !important;
+  object-fit: contain; 
+  border-radius: 10px;
+}
